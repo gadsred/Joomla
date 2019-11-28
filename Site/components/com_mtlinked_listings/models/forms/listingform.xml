@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_MTLINKED_LISTINGS_FORM_LBL_LISTING_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="main_link" type="text" size="40" class="inputbox"
+        
+            label="COM_MTLINKED_LISTINGS_FORM_LBL_LISTING_MAIN_LINK"
+            description="COM_MTLINKED_LISTINGS_FORM_DESC_LISTING_MAIN_LINK" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="sub_link" type="text" size="40" class="inputbox"
+        
+            label="COM_MTLINKED_LISTINGS_FORM_LBL_LISTING_SUB_LINK"
+            description="COM_MTLINKED_LISTINGS_FORM_DESC_LISTING_SUB_LINK" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="subs_id" type="text" size="40" class="inputbox"
+        
+            label="COM_MTLINKED_LISTINGS_FORM_LBL_LISTING_SUBS_ID"
+            description="COM_MTLINKED_LISTINGS_FORM_DESC_LISTING_SUBS_ID" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="subs_type" type="text" size="40" class="inputbox"
+        
+            label="COM_MTLINKED_LISTINGS_FORM_LBL_LISTING_SUBS_TYPE"
+            description="COM_MTLINKED_LISTINGS_FORM_DESC_LISTING_SUBS_TYPE" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="user_id" type="createdby" default="" 
+            label="COM_MTLINKED_LISTINGS_FORM_LBL_LISTING_USER_ID"
+            description="COM_MTLINKED_LISTINGS_FORM_DESC_LISTING_USER_ID"  /> 
+
+ 
+		<field name="filter_user_id" type="user" onchange="this.form.submit();" /> 
+
+       <field name="link_created" type="timecreated" default="" 
+            label="COM_MTLINKED_LISTINGS_FORM_LBL_LISTING_LINK_CREATED"
+            description="COM_MTLINKED_LISTINGS_FORM_DESC_LISTING_LINK_CREATED"  /> 
+
+       <field name="link_updated" type="timeupdated" default="" 
+            label="COM_MTLINKED_LISTINGS_FORM_LBL_LISTING_LINK_UPDATED"
+            description="COM_MTLINKED_LISTINGS_FORM_DESC_LISTING_LINK_UPDATED"  /> 
+
+         <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+        <option value="2">JARCHIVED</option>
+        <option value="-2">JTRASHED</option>
+    </field> 
+
+ </fieldset> 
+
+ <fieldset
+                        name="accesscontrol">
+                       <field name="asset_id" type="hidden" filter="unset" />
+                       <field name="rules"
+                            type="rules"
+                            label="JFIELD_RULES_LABEL"
+                            translate_label="false"
+                            filter="rules"
+                            validate="rules"
+                            class="inputbox"
+                            component="com_mtlinked_listings"
+                            section="listing"
+                        />
+
+	</fieldset>
+
+</form>

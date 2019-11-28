@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_STAFF_TITLE_LIST_VIEW_STAFFS" option="View">
+        <message>
+                        <![CDATA[COM_STAFF_TITLE_LIST_VIEW_STAFFS_DESC]]>
+        </message>
+	</layout>
+</metadata>

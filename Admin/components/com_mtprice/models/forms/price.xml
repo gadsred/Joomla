@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_MTPRICE_FORM_LBL_PRICE_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="user_id" type="createdby" default="" 
+            label="COM_MTPRICE_FORM_LBL_PRICE_USER_ID"
+            description="COM_MTPRICE_FORM_DESC_PRICE_USER_ID"  /> 
+
+       <field name="au_state" type="list"
+                
+            label="COM_MTPRICE_FORM_LBL_PRICE_AU_STATE"
+            description="COM_MTPRICE_FORM_DESC_PRICE_AU_STATE" 
+                
+                
+                 required="true" 
+            option_on="Yes"
+            option_off="Yes">
+                <option value="ALL">ALL</option>
+                <option value="ACT">ACT</option>
+                <option value="NSW">NSW</option>
+                <option value="NT">NT</option>
+                <option value="QLD">QLD</option>
+                <option value="SA">SA</option>
+                <option value="TAS">TAS</option>
+                <option value="VIC">VIC</option>
+                <option value="WA">WA</option>
+        </field> 
+
+ 
+		<field name="filter_au_state" type="list" onchange="this.form.submit();">
+			<option value="">COM_MTPRICE_PRICES_AU_STATE_FILTER</option>
+			<option value="ALL">ALL</option>
+			<option value="ACT">ACT</option>
+			<option value="NSW">NSW</option>
+			<option value="NT">NT</option>
+			<option value="QLD">QLD</option>
+			<option value="SA">SA</option>
+			<option value="TAS">TAS</option>
+			<option value="VIC">VIC</option>
+			<option value="WA">WA</option>
+		</field> 
+
+       <field name="description" type="text"
+                
+            label="COM_MTPRICE_FORM_LBL_PRICE_DESCRIPTION"
+            description="COM_MTPRICE_FORM_DESC_PRICE_DESCRIPTION" 
+                
+                
+                 required="true"  /> 
+
+       <field name="price_type" type="list"
+                
+            label="COM_MTPRICE_FORM_LBL_PRICE_PRICE_TYPE"
+            description="COM_MTPRICE_FORM_DESC_PRICE_PRICE_TYPE" 
+                 default="d" 
+                
+                
+            menu_published="0"
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes">
+                <option value="b">Buyers</option>
+                <option value="s">Sellers</option>
+        </field> 
+
+ 
+		<field name="filter_price_type" type="list" onchange="this.form.submit();">
+			<option value="">COM_MTPRICE_PRICES_PRICE_TYPE_FILTER</option>
+			<option value="B">Buyers</option>
+			<option value="S">Sellers</option>
+		</field> 
+
+       <field name="keypoints_type" type="list"
+                
+            label="COM_MTPRICE_FORM_LBL_PRICE_KEYPOINTS_TYPE"
+            description="COM_MTPRICE_FORM_DESC_PRICE_KEYPOINTS_TYPE" 
+                 default="2" 
+                
+                
+            menu_published="0"
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes">
+                <option value="1">Extra Chages</option>
+                <option value="2">Estimated Conveyancing fees</option>
+        </field> 
+
+ 
+		<field name="filter_keypoints_type" type="list" onchange="this.form.submit();">
+			<option value="">COM_MTPRICE_PRICES_KEYPOINTS_TYPE_FILTER</option>
+			<option value="1">Extra Chages</option>
+			<option value="2">Estimated Conveyancing fees</option>
+		</field> 
+
+       <field name="price" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_MTPRICE_FORM_LBL_PRICE_PRICE"
+            description="COM_MTPRICE_FORM_DESC_PRICE_PRICE" 
+                                                    
+                                                    
+                                                    
+                                                    filter="safehtml" /> 
+
+         <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+        <option value="2">JARCHIVED</option>
+        <option value="-2">JTRASHED</option>
+    </field>
+
+	</fieldset>
+
+</form>

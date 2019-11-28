@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_STAFF_FORM_LBL_STAFF_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="user_id" type="createdby" default="" 
+            label="COM_STAFF_FORM_LBL_STAFF_USER_ID"
+            description="COM_STAFF_FORM_DESC_STAFF_USER_ID"  />
+			
+		<field name="link_id" type="text" default="" 
+            label="link_id"
+            description="link_id"  /> 			
+
+       <field name="name" type="text"
+                
+            label="COM_STAFF_FORM_LBL_STAFF_NAME"
+            description="COM_STAFF_FORM_DESC_STAFF_NAME" 
+                
+                
+                 required="true"  /> 
+
+       <field name="title" type="text"
+                
+            label="Position/Title"
+            description="COM_STAFF_FORM_DESC_STAFF_TITLE" 
+                
+                
+                 /> 
+
+       <field name="image" type="text"
+                
+            label="COM_STAFF_FORM_LBL_STAFF_IMAGE"
+            description="COM_STAFF_FORM_DESC_STAFF_IMAGE" 
+                
+                
+                />
+		
+
+	</fieldset>
+
+</form>

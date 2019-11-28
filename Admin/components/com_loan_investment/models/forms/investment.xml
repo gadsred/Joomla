@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset>
+    <field name="id" type="text" readonly="true" class="readonly" default="0" description="JGLOBAL_FIELD_ID_DESC"/>
+    <field name="ordering"/>
+    <field name="state" default="1" type="list" label="JSTATUS" description="JFIELD_PUBLISHED_DESC" class="inputbox" size="1">
+      <option value="1">JPUBLISHED</option>
+      <option value="0">JUNPUBLISHED</option>
+      <option value="2">JARCHIVED</option>
+      <option value="-2">JTRASHED</option>
+    </field>
+    <field name="user_id" type="createdby" default="0" label="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_USER_ID" description="COM_LOAN_INVESTMENT_FORM_DESC_INVESTMENT_USER_ID" hidden="true" hint="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_USER_ID"/>
+    <field name="provider_name" type="text" required="true" label="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_PROVIDER_NAME" description="COM_LOAN_INVESTMENT_FORM_DESC_INVESTMENT_PROVIDER_NAME" hint="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_PROVIDER_NAME"/>
+    <field name="loan_display_name" type="textarea" rows="3" required="true" label="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_LOAN_DISPLAY_NAME" description="COM_LOAN_INVESTMENT_FORM_DESC_INVESTMENT_LOAN_DISPLAY_NAME" hint="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_LOAN_DISPLAY_NAME"/>
+    <field name="maximum_lvr" type="list" required="true" label="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_MAXIMUM_LVR" description="COM_LOAN_INVESTMENT_FORM_DESC_INVESTMENT_MAXIMUM_LVR" hint="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_MAXIMUM_LVR">
+      <option value="0.80">COM_LOAN_INVESTMENT_INVESTMENTS_MAXIMUM_LVR_OPTION_0.80</option>
+    </field>
+    <field name="loan_term" type="list" required="true" label="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_LOAN_TERM" description="COM_LOAN_INVESTMENT_FORM_DESC_INVESTMENT_LOAN_TERM" hint="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_LOAN_TERM">
+      <option value="1">COM_LOAN_INVESTMENT_INVESTMENTS_LOAN_TERM_OPTION_1</option>
+    </field>
+    <field name="borrowing_amount_range" type="list" required="true" label="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_BORROWING_AMOUNT_RANGE" description="COM_LOAN_INVESTMENT_FORM_DESC_INVESTMENT_BORROWING_AMOUNT_RANGE" hint="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_BORROWING_AMOUNT_RANGE">
+      <option value="$100k_-_$2m">COM_LOAN_INVESTMENT_INVESTMENTS_BORROWING_AMOUNT_RANGE_OPTION_$100K_-_$2M</option>
+    </field>
+    <field name="refinance" type="list" required="true" label="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_REFINANCE" description="COM_LOAN_INVESTMENT_FORM_DESC_INVESTMENT_REFINANCE" hint="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_REFINANCE">
+      <option value="1">COM_LOAN_INVESTMENT_INVESTMENTS_REFINANCE_OPTION_1</option>
+      <option value="0">COM_LOAN_INVESTMENT_INVESTMENTS_REFINANCE_OPTION_0</option>
+    </field>
+    <field name="line_of_credit" type="list" required="true" label="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_LINE_OF_CREDIT" description="COM_LOAN_INVESTMENT_FORM_DESC_INVESTMENT_LINE_OF_CREDIT" hint="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_LINE_OF_CREDIT">
+      <option value="1">COM_LOAN_INVESTMENT_INVESTMENTS_LINE_OF_CREDIT_OPTION_1</option>
+      <option value="0">COM_LOAN_INVESTMENT_INVESTMENTS_LINE_OF_CREDIT_OPTION_0</option>
+    </field>
+    <field name="self_managed_super" type="list" required="true" label="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_SELF_MANAGED_SUPER" description="COM_LOAN_INVESTMENT_FORM_DESC_INVESTMENT_SELF_MANAGED_SUPER" hint="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_SELF_MANAGED_SUPER">
+      <option value="1">COM_LOAN_INVESTMENT_INVESTMENTS_SELF_MANAGED_SUPER_OPTION_1</option>
+      <option value="0">COM_LOAN_INVESTMENT_INVESTMENTS_SELF_MANAGED_SUPER_OPTION_0</option>
+    </field>
+    <field name="interest_rate_structure" type="list" required="true" label="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_INTEREST_RATE_STRUCTURE" description="COM_LOAN_INVESTMENT_FORM_DESC_INVESTMENT_INTEREST_RATE_STRUCTURE" hint="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_INTEREST_RATE_STRUCTURE">
+      <option value="Variable">COM_LOAN_INVESTMENT_INVESTMENTS_INTEREST_RATE_STRUCTURE_OPTION_VARIABLE</option>
+    </field>
+    <field name="interest_only" type="list" required="true" label="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_INTEREST_ONLY" description="COM_LOAN_INVESTMENT_FORM_DESC_INVESTMENT_INTEREST_ONLY" hint="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_INTEREST_ONLY">
+      <option value="1">COM_LOAN_INVESTMENT_INVESTMENTS_INTEREST_ONLY_OPTION_1</option>
+      <option value="0">COM_LOAN_INVESTMENT_INVESTMENTS_INTEREST_ONLY_OPTION_0</option>
+    </field>
+    <field name="loan_allows_split_interest_rate" type="list" required="true" label="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_LOAN_ALLOWS_SPLIT_INTEREST_RATE" description="COM_LOAN_INVESTMENT_FORM_DESC_INVESTMENT_LOAN_ALLOWS_SPLIT_INTEREST_RATE" hint="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_LOAN_ALLOWS_SPLIT_INTEREST_RATE">
+      <option value="1">COM_LOAN_INVESTMENT_INVESTMENTS_LOAN_ALLOWS_SPLIT_INTEREST_RATE_OPTION_1</option>
+      <option value="0">COM_LOAN_INVESTMENT_INVESTMENTS_LOAN_ALLOWS_SPLIT_INTEREST_RATE_OPTION_0</option>
+    </field>
+    <field name="principal_interest" type="list" required="true" label="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_PRINCIPAL_INTEREST" description="COM_LOAN_INVESTMENT_FORM_DESC_INVESTMENT_PRINCIPAL_INTEREST" hint="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_PRINCIPAL_INTEREST">
+      <option value="1">COM_LOAN_INVESTMENT_INVESTMENTS_PRINCIPAL_INTEREST_OPTION_1</option>
+      <option value="0">COM_LOAN_INVESTMENT_INVESTMENTS_PRINCIPAL_INTEREST_OPTION_0</option>
+    </field>
+    <field name="states_applicable" type="checkboxes" required="true" label="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_STATES_APPLICABLE" description="COM_LOAN_INVESTMENT_FORM_DESC_INVESTMENT_STATES_APPLICABLE" hint="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_STATES_APPLICABLE">
+      <option value="ACT">COM_LOAN_INVESTMENT_INVESTMENTS_STATES_APPLICABLE_OPTION_ACT</option>
+      <option value="NSW">COM_LOAN_INVESTMENT_INVESTMENTS_STATES_APPLICABLE_OPTION_NSW</option>
+      <option value="NT">COM_LOAN_INVESTMENT_INVESTMENTS_STATES_APPLICABLE_OPTION_NT</option>
+      <option value="QLD">COM_LOAN_INVESTMENT_INVESTMENTS_STATES_APPLICABLE_OPTION_QLD</option>
+      <option value="SA">COM_LOAN_INVESTMENT_INVESTMENTS_STATES_APPLICABLE_OPTION_SA</option>
+      <option value="TAS">COM_LOAN_INVESTMENT_INVESTMENTS_STATES_APPLICABLE_OPTION_TAS</option>
+      <option value="VIC">COM_LOAN_INVESTMENT_INVESTMENTS_STATES_APPLICABLE_OPTION_VIC</option>
+      <option value="WA">COM_LOAN_INVESTMENT_INVESTMENTS_STATES_APPLICABLE_OPTION_WA</option>
+    </field>
+    <field name="redraw_facility" type="list" required="true" label="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_REDRAW_FACILITY" description="COM_LOAN_INVESTMENT_FORM_DESC_INVESTMENT_REDRAW_FACILITY" hint="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_REDRAW_FACILITY">
+      <option value="1">COM_LOAN_INVESTMENT_INVESTMENTS_REDRAW_FACILITY_OPTION_1</option>
+      <option value="0">COM_LOAN_INVESTMENT_INVESTMENTS_REDRAW_FACILITY_OPTION_0</option>
+    </field>
+    <field name="redraw_fee" type="text" required="true" label="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_REDRAW_FEE" description="COM_LOAN_INVESTMENT_FORM_DESC_INVESTMENT_REDRAW_FEE" hint="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_REDRAW_FEE"/>
+    <field name="extra_repayments" type="list" required="true" label="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_EXTRA_REPAYMENTS" description="COM_LOAN_INVESTMENT_FORM_DESC_INVESTMENT_EXTRA_REPAYMENTS" hint="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_EXTRA_REPAYMENTS">
+      <option value="1">COM_LOAN_INVESTMENT_INVESTMENTS_EXTRA_REPAYMENTS_OPTION_1</option>
+    </field>
+    <field name="weekly_repayments" type="list" required="true" label="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_WEEKLY_REPAYMENTS" description="COM_LOAN_INVESTMENT_FORM_DESC_INVESTMENT_WEEKLY_REPAYMENTS" hint="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_WEEKLY_REPAYMENTS">
+      <option value="1">COM_LOAN_INVESTMENT_INVESTMENTS_WEEKLY_REPAYMENTS_OPTION_1</option>
+      <option value="0">COM_LOAN_INVESTMENT_INVESTMENTS_WEEKLY_REPAYMENTS_OPTION_0</option>
+    </field>
+    <field name="fortnightly_repayments" type="list" required="true" label="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_FORTNIGHTLY_REPAYMENTS" description="COM_LOAN_INVESTMENT_FORM_DESC_INVESTMENT_FORTNIGHTLY_REPAYMENTS" hint="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_FORTNIGHTLY_REPAYMENTS">
+      <option value="1">COM_LOAN_INVESTMENT_INVESTMENTS_FORTNIGHTLY_REPAYMENTS_OPTION_1</option>
+      <option value="0">COM_LOAN_INVESTMENT_INVESTMENTS_FORTNIGHTLY_REPAYMENTS_OPTION_0</option>
+    </field>
+    <field name="monthly_repayments" type="list" required="true" label="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_MONTHLY_REPAYMENTS" description="COM_LOAN_INVESTMENT_FORM_DESC_INVESTMENT_MONTHLY_REPAYMENTS" hint="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_MONTHLY_REPAYMENTS">
+      <option value="1">COM_LOAN_INVESTMENT_INVESTMENTS_MONTHLY_REPAYMENTS_OPTION_1</option>
+      <option value="0">COM_LOAN_INVESTMENT_INVESTMENTS_MONTHLY_REPAYMENTS_OPTION_0</option>
+    </field>
+    <field name="date_created" type="timecreated" label="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_DATE_CREATED" description="COM_LOAN_INVESTMENT_FORM_DESC_INVESTMENT_DATE_CREATED" hint="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_DATE_CREATED"/>
+    <field name="date_modified" type="timecreated" label="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_DATE_MODIFIED" description="COM_LOAN_INVESTMENT_FORM_DESC_INVESTMENT_DATE_MODIFIED" hint="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_DATE_MODIFIED"/>
+    <field name="created_by" type="createdby" default="0" label="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_CREATED_BY" description="COM_LOAN_INVESTMENT_FORM_DESC_INVESTMENT_CREATED_BY" hint="COM_LOAN_INVESTMENT_FORM_LBL_INVESTMENT_CREATED_BY"/>
+    <field name="version_note" type="text" label="JGLOBAL_FIELD_VERSION_NOTE_LABEL" description="JGLOBAL_FIELD_VERSION_NOTE_DESC" class="inputbox" size="45" labelclass="control-label"/>
+    <field name="filter_maximum_lvr" type="list" onchange="this.form.submit();">
+      <option value="0.80">COM_LOAN_INVESTMENT_INVESTMENTS_MAXIMUM_LVR_OPTION_0.80</option>
+    </field>
+    <field name="filter_loan_term" type="list" onchange="this.form.submit();">
+      <option value="1">COM_LOAN_INVESTMENT_INVESTMENTS_LOAN_TERM_OPTION_1</option>
+    </field>
+    <field name="filter_refinance" type="list" onchange="this.form.submit();">
+      <option value="1">COM_LOAN_INVESTMENT_INVESTMENTS_REFINANCE_OPTION_1</option>
+      <option value="0">COM_LOAN_INVESTMENT_INVESTMENTS_REFINANCE_OPTION_0</option>
+    </field>
+    <field name="filter_line_of_credit" type="list" onchange="this.form.submit();">
+      <option value="1">COM_LOAN_INVESTMENT_INVESTMENTS_LINE_OF_CREDIT_OPTION_1</option>
+      <option value="0">COM_LOAN_INVESTMENT_INVESTMENTS_LINE_OF_CREDIT_OPTION_0</option>
+    </field>
+    <field name="filter_self_managed_super" type="list" onchange="this.form.submit();">
+      <option value="1">COM_LOAN_INVESTMENT_INVESTMENTS_SELF_MANAGED_SUPER_OPTION_1</option>
+      <option value="0">COM_LOAN_INVESTMENT_INVESTMENTS_SELF_MANAGED_SUPER_OPTION_0</option>
+    </field>
+    <field name="filter_interest_rate_structure" type="list" onchange="this.form.submit();">
+      <option value="Variable">COM_LOAN_INVESTMENT_INVESTMENTS_INTEREST_RATE_STRUCTURE_OPTION_VARIABLE</option>
+    </field>
+    <field name="filter_interest_only" type="list" onchange="this.form.submit();">
+      <option value="1">COM_LOAN_INVESTMENT_INVESTMENTS_INTEREST_ONLY_OPTION_1</option>
+      <option value="0">COM_LOAN_INVESTMENT_INVESTMENTS_INTEREST_ONLY_OPTION_0</option>
+    </field>
+    <field name="filter_loan_allows_split_interest_rate" type="list" onchange="this.form.submit();">
+      <option value="1">COM_LOAN_INVESTMENT_INVESTMENTS_LOAN_ALLOWS_SPLIT_INTEREST_RATE_OPTION_1</option>
+      <option value="0">COM_LOAN_INVESTMENT_INVESTMENTS_LOAN_ALLOWS_SPLIT_INTEREST_RATE_OPTION_0</option>
+    </field>
+    <field name="filter_principal_interest" type="list" onchange="this.form.submit();">
+      <option value="1">COM_LOAN_INVESTMENT_INVESTMENTS_PRINCIPAL_INTEREST_OPTION_1</option>
+      <option value="0">COM_LOAN_INVESTMENT_INVESTMENTS_PRINCIPAL_INTEREST_OPTION_0</option>
+    </field>
+    <field name="filter_states_applicable" type="list" onchange="this.form.submit();">
+      <option value="ACT">COM_LOAN_INVESTMENT_INVESTMENTS_STATES_APPLICABLE_OPTION_ACT</option>
+      <option value="NSW">COM_LOAN_INVESTMENT_INVESTMENTS_STATES_APPLICABLE_OPTION_NSW</option>
+      <option value="NT">COM_LOAN_INVESTMENT_INVESTMENTS_STATES_APPLICABLE_OPTION_NT</option>
+      <option value="QLD">COM_LOAN_INVESTMENT_INVESTMENTS_STATES_APPLICABLE_OPTION_QLD</option>
+      <option value="SA">COM_LOAN_INVESTMENT_INVESTMENTS_STATES_APPLICABLE_OPTION_SA</option>
+      <option value="TAS">COM_LOAN_INVESTMENT_INVESTMENTS_STATES_APPLICABLE_OPTION_TAS</option>
+      <option value="VIC">COM_LOAN_INVESTMENT_INVESTMENTS_STATES_APPLICABLE_OPTION_VIC</option>
+      <option value="WA">COM_LOAN_INVESTMENT_INVESTMENTS_STATES_APPLICABLE_OPTION_WA</option>
+    </field>
+    <field name="filter_redraw_facility" type="list" onchange="this.form.submit();">
+      <option value="1">COM_LOAN_INVESTMENT_INVESTMENTS_REDRAW_FACILITY_OPTION_1</option>
+      <option value="0">COM_LOAN_INVESTMENT_INVESTMENTS_REDRAW_FACILITY_OPTION_0</option>
+    </field>
+    <field name="filter_extra_repayments" type="list" onchange="this.form.submit();">
+      <option value="1">COM_LOAN_INVESTMENT_INVESTMENTS_EXTRA_REPAYMENTS_OPTION_1</option>
+    </field>
+    <field name="filter_weekly_repayments" type="list" onchange="this.form.submit();">
+      <option value="1">COM_LOAN_INVESTMENT_INVESTMENTS_WEEKLY_REPAYMENTS_OPTION_1</option>
+      <option value="0">COM_LOAN_INVESTMENT_INVESTMENTS_WEEKLY_REPAYMENTS_OPTION_0</option>
+    </field>
+    <field name="filter_fortnightly_repayments" type="list" onchange="this.form.submit();">
+      <option value="1">COM_LOAN_INVESTMENT_INVESTMENTS_FORTNIGHTLY_REPAYMENTS_OPTION_1</option>
+      <option value="0">COM_LOAN_INVESTMENT_INVESTMENTS_FORTNIGHTLY_REPAYMENTS_OPTION_0</option>
+    </field>
+    <field name="filter_monthly_repayments" type="list" onchange="this.form.submit();">
+      <option value="1">COM_LOAN_INVESTMENT_INVESTMENTS_MONTHLY_REPAYMENTS_OPTION_1</option>
+      <option value="0">COM_LOAN_INVESTMENT_INVESTMENTS_MONTHLY_REPAYMENTS_OPTION_0</option>
+    </field>
+  </fieldset>
+  <fieldset name="accesscontrol">
+    <field name="asset_id" type="hidden" filter="unset"/>
+    <field name="rules" type="rules" label="JFIELD_RULES_LABEL" translate_label="false" filter="rules" validate="rules" class="inputbox" component="com_loan_investment" section="investment"/>
+  </fieldset>
+</form>

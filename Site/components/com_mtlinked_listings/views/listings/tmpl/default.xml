@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_MTLINKED_LISTINGS_TITLE_LIST_VIEW_LISTINGS" option="View">
+        <message>
+                        <![CDATA[COM_MTLINKED_LISTINGS_TITLE_LIST_VIEW_LISTINGS_DESC]]>
+        </message>
+	</layout>
+</metadata>

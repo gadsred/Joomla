@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_MTPRICE_TITLE_ITEM_VIEW_PRICE" option="View">
+        <message>
+                        <![CDATA[COM_MTPRICE_TITLE_ITEM_VIEW_PRICE_DESC]]>
+        </message>
+    </layout>
+    <fields name="params">
+        <fieldset 
+            name="basic"
+            label="COM_MTPRICE_FIELDSET_ITEM_ID_SELECT_LABEL">
+            <field
+                name="item_id"
+                query="SELECT `id` FROM #__mt_price ORDER BY `id`"
+                type="sql"
+                key_field="id" 
+                value_field="id"
+                label="COM_MTPRICE_ITEM_ID_SELECT_LABEL"
+                require="true"
+                description="JGLOBAL_SHOW_TITLE_DESC">
+            </field>
+        </fieldset>
+    </fields>
+</metadata>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+        <!--<field name="search" type="text" hint="COM_MTPRICE_SEARCH_FILTER_SUBMIT"
+               label="COM_USERS_FILTER_SEARCH_DESC"
+               class="js-stools-search-string" />-->
+
+        
+		<field name="au_state" type="list" onchange="this.form.submit();">
+		<option value="">COM_MTPRICE_PRICES_AU_STATE_FILTER</option>
+		<option value="ACT" selected="selected">COM_MTPRICE_PRICES_AU_STATE_OPTION_ACT</option>
+		<option value="NSW">COM_MTPRICE_PRICES_AU_STATE_OPTION_NSW</option>
+		<option value="NT">COM_MTPRICE_PRICES_AU_STATE_OPTION_NT</option>
+		<option value="QLD">COM_MTPRICE_PRICES_AU_STATE_OPTION_QLD</option>
+		<option value="SA">COM_MTPRICE_PRICES_AU_STATE_OPTION_SA</option>
+		<option value="TAS">COM_MTPRICE_PRICES_AU_STATE_OPTION_TAS</option>
+		<option value="VIC">COM_MTPRICE_PRICES_AU_STATE_OPTION_VIC</option>
+		<option value="WA">COM_MTPRICE_PRICES_AU_STATE_OPTION_WA</option>
+		</field> 
+
+ 
+		<!--<field name="price_type" type="list" onchange="this.form.submit();">
+		<option value="">COM_MTPRICE_PRICES_PRICE_TYPE_FILTER</option>
+		<option value="b">COM_MTPRICE_PRICES_PRICE_TYPE_OPTION_B</option>
+		<option value="s">COM_MTPRICE_PRICES_PRICE_TYPE_OPTION_S</option>
+		</field> 
+
+ 
+		<field name="keypoints_type" type="list" onchange="this.form.submit();">
+		<option value="">COM_MTPRICE_PRICES_KEYPOINTS_TYPE_FILTER</option>
+		<option value="1">COM_MTPRICE_PRICES_KEYPOINTS_TYPE_OPTION_1</option>
+		<option value="2">COM_MTPRICE_PRICES_KEYPOINTS_TYPE_OPTION_2</option>
+		</field>-->
+
+    </fields>
+</form>
